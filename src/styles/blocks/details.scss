@@ -3,7 +3,7 @@
         display: grid;
         row-gap: 40px;
 
-        @include onTablet {
+    @include on-tablet {
             row-gap: 64px;
         }
     }
@@ -14,7 +14,7 @@
         padding-top: 40px;
         padding-bottom: 80px;
 
-        @include onTablet {
+    @include on-tablet {
             padding-top: 48px;
         }
     }
@@ -23,7 +23,8 @@
 .detail {
     &__photos {
       transition: transform 0.3s, box-shadow 0.3s;
-        @include pageGrid;
+
+    @include page-grid;
 
         margin-bottom: 16px;
     }
@@ -35,11 +36,11 @@
         position: relative;
 
         &--wide {
-            @include onTablet {
+            @include on-tablet {
                 grid-column: span 4;
             }
 
-            @include onDesktop {
+            @include on-desktop {
                 grid-column: span 8;
             }
         }
@@ -47,11 +48,11 @@
             height: 0;
             padding-bottom: 100%;
 
-            @include onTablet {
+            @include on-tablet {
                 grid-column: span 2;
             }
 
-            @include onDesktop {
+            @include on-desktop {
                 grid-column: span 4;
             }
         }
@@ -97,11 +98,11 @@
     padding-left: $padding-left;
     text-decoration: none;
 
-    @include onTablet {
+    @include on-tablet {
         width: $width-tablet;
     }
 
-    @include onDesktop {
+    @include on-desktop {
         width: $width-desktop;
     }
     &:hover {
