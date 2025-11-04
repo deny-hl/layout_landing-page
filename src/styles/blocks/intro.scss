@@ -1,0 +1,43 @@
+.intro {
+    margin: 0;
+    font-weight: $font-weight-medium;
+
+    @include pageGrid;
+
+
+    &__title {
+        grid-column: 1 / -1;
+
+        margin: 0;
+        margin-bottom: 164px;
+        font-size: $font-size-semi-desktop;
+        line-height: 100%;
+        letter-spacing: -1.5px;
+
+        @include onTablet {
+            grid-column: 1 / 4;
+            font-size: $font-size-tablet-big;
+        }
+
+        @include onDesktop {
+            grid-column: 1 / 5;
+            font-size: $font-size-desktop-small;
+        }
+    }
+
+    &__description {
+        grid-column: 1 / -1;
+
+        margin: 0;
+        font-size: 23px;
+        line-height: $line-height-large;
+
+        @include onTablet {
+            grid-column: 4 / 7;
+        }
+
+        @include onDesktop {
+            grid-column: 6 / 12;
+        }
+    }
+}

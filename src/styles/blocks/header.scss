@@ -1,0 +1,40 @@
+.header {
+  background-image: url(../images/header-bg-mobile.png);
+  background-size: cover;
+  background-position: center;
+
+  &__content {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-weight: $font-weight-bold;
+    font-style: Bold;
+    color: $color-white;
+    font-size: $font-size-mobile;
+    line-height: 100%;
+    letter-spacing: -1.5px;
+    text-align: center;
+    vertical-align: middle;
+
+    @include onTablet {
+      font-size: $font-size-tablet;
+    }
+
+    @include onDesktop {
+      font-size: $font-size-desktop;
+    }
+  }
+
+  &__bottom {
+    padding-bottom: 40px;
+
+    @include onTablet {
+      padding: 64px;
+    }
+  }
+}

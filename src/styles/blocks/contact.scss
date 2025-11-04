@@ -1,0 +1,117 @@
+.contact {
+    margin: 0;
+
+    &__wrapper{
+        @include pageGrid;
+    }
+    &__forms {
+        justify-content: center;
+        text-align: center;
+        grid-column: 1 / -1;
+
+        @include onTablet {
+            grid-column: 1 / 2;
+        }
+
+        @include onDesktop {
+            grid-column: 1 / 5;
+        }
+    }
+    &__input {
+        border: $border;
+        margin-bottom: 16px;
+
+        font-weight: $font-weight-regular;
+        font-size: $font-size-regular;
+        line-height: $line-height-normal;
+
+        background-color: $background-color-white;
+        color: $color-dark-gray;
+        width: $width-mobile;
+        height: $height-input;
+        border-radius: $border-radius;
+        padding-right: $padding-right;
+        padding-left: $padding-left;
+        text-decoration: none;
+
+        @include onTablet {
+          width: $width-tablet;
+        }
+        @include onDesktop {
+          width: $width-desktop;
+        }
+    }
+    &__textarea {
+        width: $width-mobile;
+        height: 148px;
+        background: $background-color-white;
+        border: $border;
+        padding: 14px 48px;
+        gap: 10px;
+        text-decoration: none;
+
+        border-radius: 16px;
+        margin-bottom: 32px;
+        font-weight: $font-weight-regular;
+        font-size: $font-size-regular;
+        line-height: $line-height-normal;
+
+        @include onTablet {
+          width: $width-tablet;
+        }
+        @include onDesktop {
+          width: $width-desktop;
+        }
+    }
+    &__info {
+        width: 155px;
+        grid-column: 1 / -1;
+
+        @include onTablet {
+          grid-column: 4 / 5;
+        }
+        @include onDesktop {
+          grid-column: 9 / 11;
+        }
+    }
+    &__info__link {
+        text-decoration: none;
+        color: $color-white;
+        font-weight: $font-weight-medium;
+        font-size: $font-size-semi-small;
+    }
+}
+
+.contact__button-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: $font-weight-bold;
+    font-size: $font-size-semi-small;
+    line-height: 27px;
+
+    background-color: $background-color-white;
+    color: $color-dark-gray;
+    width: $width-mobile;
+    height: 56px;
+    border-radius: $border-radius;
+    padding-right: $padding-right;
+    padding-left: $padding-left;
+    text-decoration: none;
+
+    @include onTablet {
+        width: $width-tablet;
+    }
+
+    @include onDesktop {
+        width: $width-desktop;
+    }
+    &:hover {
+        box-shadow: $box-shadow;
+    }
+
+    &:active {
+        box-shadow: $box-shadow;
+    }
+}

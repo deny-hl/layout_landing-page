@@ -1,0 +1,15 @@
+.main {
+  &__content {
+    display: grid;
+
+    // row-gap: 96px; add gap on whole page which isn't good for this project since everywhere different gaps
+    padding-block: 96px;
+
+    // # Add padding and gap on whole page
+    // @include onTablet {
+    //   padding-block: 120px;
+    //   row-gap: 120px;
+    // }
+  }
+
+}

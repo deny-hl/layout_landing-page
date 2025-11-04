@@ -1,0 +1,53 @@
+/* Fonts */
+$font-family: 'Poppins', sans-serif;
+
+/* Font Weights */
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
+
+/* Font Sizes */
+$font-size-small: 12px;
+$font-size-regular: 14px;
+$font-size-semi-small: 16px;
+$font-size-semi-mobile: 22px;
+$font-size-semi-tablet: 24px;
+$font-size-semi-desktop: 32px;
+$font-size-mobile: 36px;
+$font-size-tablet: 40px;
+$font-size-tablet-big: 48px;
+$font-size-desktop-small: 64px;
+$font-size-desktop: 80px;
+
+/* Colors */
+$color-white-border: #E0E0E0;
+$background-color-white: #fff;
+$color-white: #fff;
+$color-gray: #c2c2c2;
+$color-dark-gray: #1d1d1d;
+$box-shadow-color: #E8E8F066;
+
+/* Breakpoints */
+$breakpoint-tablet: 576px;
+$desktop-min-width: 1020px;
+
+//  Width
+$width-mobile: 278px;
+$width-tablet: 288px;
+$width-desktop: 411px;
+
+// Border
+$border-radius: 40px;
+$border: 1px solid $color-white-border;
+
+// Padding
+$padding-left: 48px;
+$padding-right: 48px;
+
+
+$line-height-normal: 20px;
+$line-height-large: 140%;
+$height-input: 48px;
+$height-textarea: 148px;
+$box-shadow: 1px 4px 16px 0 $box-shadow-color;
