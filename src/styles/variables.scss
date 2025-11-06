@@ -21,21 +21,21 @@ $font-size-desktop-small: 64px;
 $font-size-desktop: 80px;
 
 /* Colors */
-$color-white-border: #E0E0E0;
+$color-white-border: #e0e0e0;
 $background-color-white: #fff;
 $color-white: #fff;
 $color-gray: #c2c2c2;
 $color-dark-gray: #1d1d1d;
-$box-shadow-color: #E8E8F066;
+$box-shadow-color: #e8e8f066;
 
 /* Breakpoints */
-$breakpoint-tablet: 576px;
-$desktop-min-width: 1020px;
+$breakpoint-tablet: 744px;
+$desktop-min-width: 1260px;
 
 //  Width
-$width-mobile: 278px;
-$width-tablet: 288px;
-$width-desktop: 411px;
+$width-mobile: 297px;
+$width-tablet: 318px;
+$width-desktop: 430px;
 
 // Border
 $border-radius: 40px;
@@ -47,5 +47,5 @@ $padding-right: 48px;
 $line-height-normal: 20px;
 $line-height-large: 140%;
 $height-input: 48px;
-$height-textarea: 148px;
+$height-textarea: 120px;
 $box-shadow: 1px 4px 16px 0 $box-shadow-color;

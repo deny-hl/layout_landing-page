@@ -11,16 +11,7 @@
 @import './blocks/section-title';
 @import './blocks/recommended';
 @import './blocks/product';
+@import './blocks/button';
 @import './blocks/details';
 @import './blocks/contact';
-
-.footer {
-  margin: auto;
-  position: sticky;
-  z-index: -1;
-  height: 480px;
-  background-image: url(../images/footer-bg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
+@import './blocks/footer';

@@ -1,120 +1,97 @@
 .contact {
-    margin: 0;
+  margin: 0;
 
-    &__wrapper{
+  &__wrapper {
     @include page-grid;
-    }
-    &__forms {
-        justify-content: center;
-        text-align: center;
-        grid-column: 1 / -1;
+  }
+  &__forms {
+    grid-column: 1 / -1;
 
     @include on-tablet {
-            grid-column: 1 / 2;
-        }
+      grid-column: 1 / 2;
+    }
 
     @include on-desktop {
-            grid-column: 1 / 5;
-        }
+      grid-column: 1 / 5;
     }
-    &__input {
-        border: $border;
-        margin-bottom: 16px;
+  }
+  &__input {
+    padding-left: 16px;
+    margin-bottom: 16px;
 
-        font-weight: $font-weight-regular;
-        font-size: $font-size-regular;
-        line-height: $line-height-normal;
-
-        background-color: $background-color-white;
-        color: $color-dark-gray;
-        width: $width-mobile;
-        height: $height-input;
-        border-radius: $border-radius;
-        padding-right: $padding-right;
-        padding-left: $padding-left;
-        text-decoration: none;
-
-    @include on-tablet {
-          width: $width-tablet;
-        }
-
-    @include on-desktop {
-          width: $width-desktop;
-        }
-    }
-    &__textarea {
-        width: $width-mobile;
-        height: 148px;
-        background: $background-color-white;
-        border: $border;
-        padding: 14px 48px;
-        gap: 10px;
-        text-decoration: none;
-
-        border-radius: 16px;
-        margin-bottom: 32px;
-        font-weight: $font-weight-regular;
-        font-size: $font-size-regular;
-        line-height: $line-height-normal;
-
-    @include on-tablet {
-          width: $width-tablet;
-        }
-
-    @include on-desktop {
-          width: $width-desktop;
-        }
-    }
-    &__info {
-        width: 155px;
-        grid-column: 1 / -1;
-
-    @include on-tablet {
-          grid-column: 4 / 5;
-        }
-
-    @include on-desktop {
-          grid-column: 9 / 11;
-        }
-    }
-    &__info__link {
-        text-decoration: none;
-        color: $color-white;
-        font-weight: $font-weight-medium;
-        font-size: $font-size-semi-small;
-    }
-}
-
-.contact__button-link {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-
-    font-weight: $font-weight-bold;
-    font-size: $font-size-semi-small;
-    line-height: 27px;
-
-    background-color: $background-color-white;
-    color: $color-dark-gray;
     width: $width-mobile;
-    height: 56px;
+    height: $height-input;
     border-radius: $border-radius;
-    padding-right: $padding-right;
-    padding-left: $padding-left;
-    text-decoration: none;
+
+    @include entry;
 
     @include on-tablet {
-        width: $width-tablet;
+      width: $width-tablet;
     }
 
     @include on-desktop {
-        width: $width-desktop;
-    }
-    &:hover {
-        box-shadow: $box-shadow;
+      width: $width-desktop;
     }
 
-    &:active {
-        box-shadow: $box-shadow;
+    &::placeholder {
+      color: #292929;
     }
+  }
+  &__textarea {
+    resize: none;
+    background: $background-color-white;
+    padding: 14px 16px;
+    min-height: 148px;
+    border: none;
+    width: 280px;
+
+    border-radius: 16px;
+    margin-bottom: 32px;
+    font-family: $font-family;
+    font-weight: $font-weight-regular;
+    font-size: $font-size-regular;
+    line-height: $line-height-normal;
+
+    @include entry;
+
+    @include on-tablet {
+      width: 300px;
+    }
+
+    @include on-desktop {
+      width: 412px;
+    }
+  }
+
+  &::placeholder {
+      color: #292929;
+    }
+
+  &:focus {
+    border: 1px solid #292929;
+    color: #292929;
+    outline: none;
+
+    &::placeholder {
+      color: #292929;
+    }
+  }
+  &__info {
+    width: 155px;
+    grid-column: 1 / -1;
+
+    @include on-tablet {
+      grid-column: 4 / 5;
+    }
+
+    @include on-desktop {
+      grid-column: 9 / 10;
+    }
+  }
+  &__info__link {
+    text-decoration: none;
+    color: $color-white;
+    font-weight: $font-weight-medium;
+    font-size: $font-size-semi-small;
+  }
 }

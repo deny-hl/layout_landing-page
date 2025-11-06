@@ -1,0 +1,31 @@
+.button {
+  width: 315px;
+  height: 56px;
+  font-weight: $font-weight-bold;
+  font-style: Bold;
+  font-size: 16px;
+  line-height: 27px;
+  padding-left: 48px;
+  padding-right: 48px;
+  text-align: center;
+  background-color: $color-white;
+  border: none;
+  border-radius: $border-radius;
+  margin-bottom: 48px;
+
+  &:hover {
+    box-shadow: $box-shadow;
+  }
+
+  &:active {
+    box-shadow: $box-shadow;
+  }
+
+  @include on-tablet {
+    width: 330px;
+  }
+
+  @include on-desktop {
+    width: 444px;
+  }
+}

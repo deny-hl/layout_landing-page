@@ -2,6 +2,7 @@
   display: block;
   height: 24px;
   width: 24px;
+  position: relative;
   background-size: cover;
   background-position: center;
   transition: transform 0.3s;
@@ -15,14 +16,47 @@
 
   &--phone {
     background-image: url(../images/icons/icon-phone.svg);
+
+    &::after {
+      font-family: $font-family;
+      font-weight: $font-weight-bold;
+      letter-spacing: 2px;
+      line-height: 16px;
+
+      content: attr(data-phone);
+      position: absolute;
+      right: calc(100% + 8px);
+      top: 50%;
+      transform: translateY(-50%) translateX(4px);
+      background: transparent;
+      color: $color-white;
+      padding: 6px 8px;
+      border-radius: 6px;
+      white-space: nowrap;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+      font-size: 12px;
+      opacity: 0;
+      pointer-events: none;
+      transition:
+        opacity 0.15s ease,
+        transform 0.15s ease;
+      z-index: 10;
+      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
+    }
+
+    &:hover::after,
+    &:focus::after {
+      opacity: 1;
+      transform: translateY(-50%) translateX(0);
+    }
   }
 
   &--menu {
     background-image: url(../images/icons/icon-burger-menu.svg);
 
     &:hover {
-    background-image: url(../images/icons/icon-burger-menu-hover.svg);
-  }
+      background-image: url(../images/icons/icon-burger-menu-hover.svg);
+    }
   }
 
   &--close {

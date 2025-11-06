@@ -1,43 +1,43 @@
 .intro {
+  margin: 0;
+  font-weight: $font-weight-medium;
+
+  @include page-grid;
+
+  &__title {
+    grid-column: 1 / -1;
+
     margin: 0;
-    font-weight: $font-weight-medium;
-
-    @include page-grid;
-
-
-    &__title {
-        grid-column: 1 / -1;
-
-        margin: 0;
-        margin-bottom: 164px;
-        font-size: $font-size-semi-desktop;
-        line-height: 100%;
-        letter-spacing: -1.5px;
+    margin-bottom: 32px;
+    font-size: $font-size-semi-desktop;
+    line-height: 100%;
+    letter-spacing: -1.5px;
 
     @include on-tablet {
-            grid-column: 1 / 4;
-            font-size: $font-size-tablet-big;
-        }
-
-    @include on-desktop {
-            grid-column: 1 / 5;
-            font-size: $font-size-desktop-small;
-        }
+      grid-column: 1 / 4;
+      font-size: $font-size-tablet-big;
     }
 
-    &__description {
-        grid-column: 1 / -1;
+    @include on-desktop {
+      grid-column: 1 / 5;
+      font-size: $font-size-desktop-small;
+    }
+  }
 
-        margin: 0;
-        font-size: 23px;
-        line-height: $line-height-large;
+  &__description {
+    grid-column: 1 / -1;
+
+    margin: 0;
+    margin-bottom: 92px;
+    font-size: 23px;
+    line-height: $line-height-large;
 
     @include on-tablet {
-            grid-column: 4 / 7;
-        }
+      grid-column: 4 / 7;
+    }
 
     @include on-desktop {
-            grid-column: 6 / 12;
-        }
+      grid-column: 6 / 12;
     }
+  }
 }
