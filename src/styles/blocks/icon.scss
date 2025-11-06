@@ -28,7 +28,6 @@
       right: calc(100% + 8px);
       top: 50%;
       transform: translateY(-50%) translateX(4px);
-      background: transparent;
       color: $color-white;
       padding: 6px 8px;
       border-radius: 6px;
@@ -39,7 +38,7 @@
       pointer-events: none;
       transition:
         opacity 0.15s ease,
-        transform 0.15s ease;
+        transform 0.3s ease;
       z-index: 10;
       text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
     }
