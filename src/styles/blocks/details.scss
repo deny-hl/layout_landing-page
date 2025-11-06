@@ -23,19 +23,19 @@
 
 .detail {
   &__photos {
-    // transition:
-    //   transform 0.3s,
-    //   box-shadow 0.3s;
+     transition:
+      transform 0.3s,
+      box-shadow 0.3s;
 
     @include page-grid;
 
     margin-bottom: 16px;
   }
 
-  // &:hover {
-  //   transform: scale(1.05);
-  //   box-shadow: 0 4px 24px rgba(0, 0, 0, .15);
-  // }
+   &:hover {
+    transform: scale(1.05);
+     box-shadow: 0 4px 24px rgba(0, 0, 0, .15);
+   }
   &__link {
     position: relative;
 
@@ -66,8 +66,6 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-
-    @include hover(transform, scale(1.08));
   }
 
   &__title {
