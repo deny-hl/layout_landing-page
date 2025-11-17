@@ -1,8 +1,7 @@
 .button {
-  width: 315px;
+  width: 278px;
   height: 56px;
   font-weight: $font-weight-bold;
-  font-style: Bold;
   font-size: 16px;
   line-height: 27px;
   padding-left: 48px;
@@ -12,6 +11,8 @@
   border: none;
   border-radius: $border-radius;
   margin-bottom: 48px;
+  box-sizing: border-box;
+  max-width: 100%;
 
   &:hover {
     box-shadow: $box-shadow;
@@ -22,10 +23,10 @@
   }
 
   @include on-tablet {
-    width: 330px;
+    width: 288px;
   }
 
   @include on-desktop {
-    width: 444px;
+    width: 411px;
   }
 }

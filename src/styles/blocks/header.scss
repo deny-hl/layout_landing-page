@@ -1,7 +1,19 @@
 .header {
   background-image: url(../images/header-bg-mobile.png);
   background-size: cover;
-  background-position: center;
+  background-position-x: 88%;
+
+
+  @include on-tablet {
+    background-position: center;
+    height: 100%;
+  }
+
+  @include on-desktop {
+    background-position-y: 37%;
+    height: 100%;
+  }
+
 
   &__content {
     height: 100vh;
@@ -13,7 +25,6 @@
 
   &__title {
     font-weight: $font-weight-bold;
-    font-style: Bold;
     color: $color-white;
     font-size: $font-size-mobile;
     line-height: 100%;
@@ -22,7 +33,7 @@
     vertical-align: middle;
 
     @include on-tablet {
-      font-size: $font-size-tablet;
+      font-size: $font-size-desktop-small;
     }
 
     @include on-desktop {
@@ -31,10 +42,13 @@
   }
 
   &__bottom {
-    padding-bottom: 40px;
+    padding-bottom: 66px;
 
     @include on-tablet {
-      padding: 64px;
+      padding-bottom: 88px;
+    }
+    @include on-desktop {
+      padding-bottom: 120px;
     }
   }
 }

@@ -31,11 +31,6 @@
     line-height: 27px;
     color: $color-dark-gray;
     text-decoration: none;
-
-    &:hover {
-      text-decoration: underline;
-      color: #645c5c;
-    }
   }
 
   &__call-to-order {
@@ -49,9 +44,5 @@
     letter-spacing: 2px;
     color: $color-dark-gray;
     text-decoration: none;
-
-    &:hover {
-      color: #645c5c;
-    }
   }
 }

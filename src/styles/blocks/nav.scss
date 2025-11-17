@@ -16,10 +16,6 @@
     line-height: 22px;
     letter-spacing: 2px;
 
-    &:hover {
-      color: #645c5c;
-    }
-
     &::after {
       content: '';
       position: absolute;

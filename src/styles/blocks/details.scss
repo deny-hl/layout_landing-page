@@ -22,19 +22,18 @@
       }
 
       &.button {
-      grid-column: 1 / -1;
+        grid-column: 1 / -1;
 
-      @include on-tablet {
-        grid-column: 2 / -2;
-      }
+        @include on-tablet {
+          grid-column: 2 / -2;
+        }
 
-      @include on-desktop {
-        grid-column: 5 / 9;
+        @include on-desktop {
+          grid-column: 5 / 9;
+        }
       }
-    }
-    }
   }
-
+}
 
 .detail {
   &__photos {
