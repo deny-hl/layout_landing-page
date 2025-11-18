@@ -1,5 +1,5 @@
 .button {
-  width: 278px;
+  width: $width-mobile;
   height: 56px;
   font-weight: $font-weight-bold;
   font-size: 16px;
@@ -13,6 +13,7 @@
   margin-bottom: 48px;
   box-sizing: border-box;
   max-width: 100%;
+  cursor: pointer;
 
   &:hover {
     box-shadow: $box-shadow;
@@ -23,10 +24,10 @@
   }
 
   @include on-tablet {
-    width: 288px;
+    width: $width-tablet;
   }
 
   @include on-desktop {
-    width: 411px;
+    width: $width-desktop;
   }
 }

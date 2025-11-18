@@ -24,7 +24,7 @@
     padding-right: 16px;
     margin-bottom: 16px;
 
-    width: 278px;
+    width: 100%;
     height: $height-input;
     border-radius: $border-radius;
     max-width: 100%;
@@ -33,15 +33,15 @@
     @include entry;
 
     @include on-tablet {
-      width: 288px;
+      width: $width-tablet;
     }
 
     @include on-desktop {
-      width: 411px;
+      width: $width-desktop;
     }
 
     &::placeholder {
-      color: $color-dark-gray;
+      color: $input-placeholder-color;
     }
 
     &:hover {
@@ -70,7 +70,7 @@
     padding: 14px 16px;
     min-height: 148px;
     border: none;
-    width: 278px;
+    width: 100%;
 
     border-radius: 16px;
     margin-bottom: 32px;
@@ -84,15 +84,25 @@
     @include entry;
 
     @include on-tablet {
-      width: 288px;
+      width: $width-tablet;
     }
 
     @include on-desktop {
-      width: 411px;
+      width: $width-desktop;
     }
 
     &::placeholder {
-      color: $color-gray;
+      color: $input-placeholder-color;
+    }
+
+    &:hover {
+      border: 1px solid $color-dark-gray;
+      color: $color-dark-gray;
+      outline: none;
+
+      &::placeholder {
+        color: $color-dark-gray;
+      }
     }
 
     &:focus {
@@ -107,21 +117,35 @@
   }
   &__info {
     width: 155px;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+
     grid-column: 1 / 2;
 
     @include on-tablet {
-      grid-column: 4 / 5;
+      grid-column: 2 / 3;
     }
 
     @include on-desktop {
-      grid-column: 9 / 10;
+      grid-column: 8 / 10;
     }
   }
+  &__info-lable {
+    font-weight: $font-weight-regular;
+    font-size: $font-size-regular;
+    color: $color-white;
+    line-height: $line-height-large;
+    margin-bottom: 8px;
+  }
+
   &__info__link {
     text-decoration: none;
     color: $color-white;
     font-weight: $font-weight-medium;
     font-size: $font-size-semi-small;
+    margin-bottom: 24px;
+    width: 237px;
 
     &:hover {
       text-decoration: underline;
