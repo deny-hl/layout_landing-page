@@ -1,46 +1,31 @@
-MYBIKE Landing Page
+# MYBIKE Landing Page
 
-A responsive landing page developed as part of the Mate Academy Frontend program.
-The project reproduces the original Figma design and demonstrates skills in semantic HTML, modular SCSS, adaptive layout, reusable UI components, and modern tooling with Parcel bundler.
+MYBIKE is a responsive landing page developed within the Mate Academy Frontend program. The project reproduces the original Figma design and demonstrates semantic HTML, modular SCSS, adaptive layout techniques, reusable UI components, and modern tooling with Parcel bundler.
 
-Features
+## Features
+- Pixel-perfect layout that matches the Figma specification
+- Fully responsive across mobile, tablet, and desktop breakpoints
+- Modular SCSS architecture using partials and BEM
+- Parcel bundler for fast dev server, HMR, and optimized production builds
+- Clean, maintainable folder structure for assets, scripts, and styles
+- Interactive navigation states and reusable UI components
+- Responsive imagery tuned for performance
+- Styled contact form with accessible inputs and validation cues
 
-Pixel-perfect layout based on the Figma specification
+## Technologies Used
+- HTML5
+- SCSS (Sass)
+- JavaScript (ES6)
+- Parcel
+- Git / GitHub Pages
 
-Fully responsive layout (mobile/tablet/desktop)
+## Preview
+- Live Demo: [https://deny-hl.github.io/layout_landing-page/](https://deny-hl.github.io/layout_landing-page/)
+- Figma Design: [https://www.figma.com/design/NZQAIydtHo5QkINyGLHNcq/BIKE-New-Version?node-id=0-1&p=f&t=TnRoAFO1anDesFf5-0](https://www.figma.com/design/NZQAIydtHo5QkINyGLHNcq/BIKE-New-Version?node-id=0-1&p=f&t=TnRoAFO1anDesFf5-0)
 
-Modular SCSS architecture with partials and BEM methodology
-
-Parcel bundler for fast development, hot reloading, and optimized production builds
-
-Clean and maintainable folder structure
-
-Interactive navigation and UI states
-
-Responsive images for performance
-
-Styled contact form and reusable components
-
-Technologies Used
-
-HTML5
-
-SCSS (Sass)
-
-JavaScript (ES6)
-
-Parcel (bundler/microprocessor)
-
-Git / GitHub Pages
-
-Preview
-
-Live Demo: https://deny-hl.github.io/layout_landing-page/
-
-
-Project Structure
+## Project Structure
+```
 src/
-│
 ├── images/
 │   ├── icons/
 │   ├── product/
@@ -51,10 +36,8 @@ src/
 │   ├── logo-black-2x.png
 │   ├── logo-white.png
 │   └── logo-white-2x.png
-│
 ├── scripts/
 │   └── main.js
-│
 ├── styles/
 │   ├── blocks/
 │   │   ├── button.scss
@@ -72,65 +55,54 @@ src/
 │   │   ├── recommended.scss
 │   │   ├── section-title.scss
 │   │   └── top-bar.scss
-│   │
 │   ├── utils/
 │   │   ├── mixins.scss
-│   │   ├── variables.scss
-│   │   └── main.scss
-│   │
+│   │   └── variables.scss
 │   └── main.scss
-│
 └── index.html
+```
 
-
-Installation & Setup
-1. Clone the repository
-  git clone https://github.com/deny-hl/layout_landing-page.git
-  cd layout_landing-page
-2. Install dependencies
-  npm install
-3. Start the development server
-  npm start
+## Installation & Setup
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/deny-hl/layout_landing-page.git
+   cd layout_landing-page
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   npm start
+   ```
 
 Parcel will:
+- start a local development server
+- enable hot module replacement
+- rebuild automatically when files change
 
-start a local dev server
+4. Build for production:
+   ```bash
+   npm run build
+   ```
+   Parcel outputs an optimized `dist/` directory with:
+   - minified assets
+   - hashed filenames for caching
+   - cleaned, production-ready HTML/CSS/JS
 
-enable hot module replacement
+## Deployment (GitHub Pages)
+1. Run the production build: `npm run build`
+2. Push the contents of `dist/` to the GitHub Pages branch (e.g., `gh-pages`)
+3. GitHub Pages will serve the build automatically
 
-rebuild automatically on changes
-
-5. Build for production
-  npm run build
-
-Parcel generates an optimized dist/ folder with:
-
-minified assets
-
-hashed filenames
-
-cleaned output
-
-Deployment (GitHub Pages)
-
-Run the production build
-
-Push the contents of dist/ to your deployment branch
-
-GitHub Pages will serve the build automatically
-
-About the Project
-
-This landing page was created as a portfolio assignment for Mate Academy.
-It focuses on:
-
-Implementing responsive UI from design
-
-Building scalable SCSS structure
-
-Writing modular, readable frontend code
-
-Using Parcel as a modern bundler
+## About the Project
+This landing page was created as a portfolio assignment for Mate Academy with the goals of:
+- Implementing responsive UI directly from the design system
+- Building a scalable SCSS structure with reusable blocks
+- Writing modular, readable frontend code with ES6
+- Using Parcel as a modern bundler for development and production
+- Practicing deployment workflows with GitHub Pages and CI-ready scripts
 
 Practicing production deployment on GitHub Pages
 
